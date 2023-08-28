@@ -2,9 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 
-const DEFAULT_SNACKS = ['chips', 'soda', 'sardines'];
-
-function VendingMachine({ snacks = DEFAULT_SNACKS }) {
+/** Creates a list of links to various snack items
+ *
+ * props: snacks (array of snack items)
+ *
+ * state: none
+ *
+ * App > VendingMachine
+ */
+function VendingMachine({ snacks }) {
 
   return (
     <div className="VendingMachine">
